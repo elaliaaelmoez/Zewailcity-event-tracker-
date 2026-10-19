@@ -1,6 +1,12 @@
 Campus Events Guide Website
 A beginner-friendly, responsive campus events website built for Zewailians (Zewail City students). It helps students explore campus events, view a featured event, check the timetable, and try a registration form.
+> **Course:** SW302 – User Interface Development 
+> **Program:** Computer science_ SW department University of Science and Technology, Zewail City
+> **Assignment:** Assignment 1 – HTML & CSS (individual)
+> **Author:** *Elaliaa Elmoez * – *202402473*
+
 Project Pages
+
 - index.html — Home page with an introduction and featured events.
 - events.html — Events catalogue.
 - event-details.html — Details for the featured AI and Technology Workshop, including an agenda and review form.
