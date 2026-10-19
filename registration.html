@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration | Zewail City</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Event Registration</h1>
+        <p>Register to participate in our campus events.</p>
+    </header>
+
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="event-details.html">Event Details</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="registration.html">Register</a>
+
+<label class="theme-toggle">
+    <input type="checkbox" id="dark-mode">
+    <span>Dark mode</span>
+</label>
+
+    </nav>
+
+    <main>
+        <section class="registration-section">
+            <h2>AI and Technology Workshop</h2>
+            <p><strong>Date:</strong> November 10, 2026</p>
+            <p><strong>Time:</strong> 10:00 AM - 1:00 PM</p>
+            <p><strong>Venue:</strong> Zewail City Campus</p>
+
+            <h3>Registration Form</h3>
+
+            <form class="registration-form" action="#" method="get">
+
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name"
+                       required maxlength="60"
+                       pattern="[A-Za-z ]{2,60}"
+                       title="Enter 2 to 60 letters and spaces.">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="website">Personal Website (optional):</label>
+                <input type="url" id="website" name="website">
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age"
+                       min="16" max="100" required>
+
+                <label for="interest">Interest Level (1-10):</label>
+                <input type="range" id="interest" name="interest"
+                       min="1" max="10" value="5">
+
+                <label for="event-date">Registration Date:</label>
+                <input type="date" id="event-date" name="event-date" required>
+
+
+                <label for="arrival-time">Preferred Arrival Time:</label>
+                <input type="time" id="arrival-time" name="arrival-time" required>
+
+                <label for="student-id">Upload Student ID (optional):</label>
+                <input type="file" id="student-id" name="student-id">
+
+                <p>Attendance Type:</p>
+
+                <label>
+                    <input type="radio" name="attendance" value="in-person" required>
+                    In person
+                </label>
+
+                <label>
+                    <input type="radio" name="attendance" value="online">
+                    Online
+                </label>
+
+                <label for="study-program">Study Program:</label>
+                <select id="study-program" name="study-program" required>
+                    <option value="">Select your program</option>
+                    <option value="computer-science">Computer Science</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="nanotechnology">Nanotechnology</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments"
+                          rows="4" maxlength="300"></textarea>
+
+                <label>
+                    <input type="checkbox" name="agreement" required>
+                    I confirm that my registration information is correct.
+                </label>
+
+                <button type="submit">Submit Registration</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Zewail City Events. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

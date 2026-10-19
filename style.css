@@ -1,0 +1,467 @@
+img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+} 
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 90%;
+}
+ .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+
+@media (max-width: 600px) {
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+} 
+
+.main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #ffd166;
+} 
+
+
+@media (max-width: 600px) {
+    .main-nav {
+        gap: 12px;
+        padding: 15px 10px;
+    }
+
+    .main-nav a {
+        font-size: 14px;
+    }
+}
+
+.featured-events {
+    padding: 60px 8%;
+    text-align: center;
+    background-color: #f4f6f9;
+    color: #222;
+}
+
+.featured-events h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.event-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+    color: #173b67;
+}
+
+.event-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #173b67;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.event-card a:hover {
+    color: #d97706;
+} 
+@media (max-width: 900px) {
+    .events-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .events-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.site-footer {
+    background-color: #173b67;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 0;
+}
+
+.site-footer p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.event-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+} 
+
+.catalogue-section {
+    padding: 50px 8%;
+    background-color: #f4f6f9;
+    color: #222;
+}
+
+.catalogue-section h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #173b67;
+}
+
+.catalogue-section > p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.catalogue-section .events-container {
+    align-items: stretch;
+}
+
+.catalogue-section .event-card {
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.catalogue-section .event-card:hover {
+    transform: translateY(-5px);
+}
+.event-detail-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f4f6f9;
+    color: #222;
+    border-radius: 12px;
+}
+
+.event-detail-section h2 {
+    color: #173b67;
+    text-align: center;
+}
+
+.event-poster {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 25px auto;
+}
+
+.event-detail-section li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.event-detail-section > a {
+    display: inline-block;
+    background-color: #173b67;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.event-detail-section > a:hover {
+    background-color: #d97706;
+}
+.agenda-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.agenda-table th,
+.agenda-table td {
+    border: 1px solid #d5dbe3;
+    padding: 14px;
+    text-align: left;
+}
+
+.agenda-table th {
+    background-color: #173b67;
+    color: white;
+}
+
+.agenda-table tbody tr:nth-child(even) {
+    background-color: #eaf0f7;
+}
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.review-form label {
+    font-weight: bold;
+    color: #173b67;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.review-form textarea {
+    resize: vertical;
+}
+
+.review-form button {
+    align-self: flex-start;
+    background-color: #173b67;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.review-form button:hover {
+    background-color: #d97706;
+}
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.schedule-section {
+    padding: 40px 8%;
+    color: #222;
+}
+
+.schedule-section h2 {
+    color: #173b67;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.schedule-section .agenda-table {
+    min-width: 650px;
+}
+.registration-section {
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f4f6f9;
+    color: #222;
+    border-radius: 12px;
+}
+
+.registration-section h2,
+.registration-section h3 {
+    color: #173b67;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.registration-form label {
+    font-weight: bold;
+}
+
+.registration-form input:not([type="radio"]):not([type="checkbox"]) ,
+.registration-form select,
+.registration-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.registration-form input[type="radio"],
+.registration-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+.registration-form input[type="range"],
+.registration-form input[type="color"],
+.registration-form input[type="file"] {
+    padding: 4px;
+}
+
+.registration-form button {
+    align-self: flex-start;
+    padding: 12px 22px;
+    background-color: #173b67;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.registration-form button:hover {
+    background-color: #d97706;
+}
+
+@media (max-width: 600px) {
+    .registration-section {
+        margin: 20px 12px;
+        padding: 20px;
+    }
+}
+
+body:not(:has(.hero)) .main-nav {
+    position: static;
+    background-color: #173b67;
+    justify-content: center;
+}
+
+body:not(:has(.hero)) header {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #f4f6f9;
+    color: #173b67;
+}
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.theme-toggle input {
+    cursor: pointer;
+    accent-color: #ffd166;
+}
+
+body:has(#dark-mode:checked) {
+    background-color: #121820;
+    color: #f1f5f9;
+}
+
+body:has(#dark-mode:checked) .featured-events,
+body:has(#dark-mode:checked) .catalogue-section,
+body:has(#dark-mode:checked) .event-detail-section,
+body:has(#dark-mode:checked) .registration-section,
+body:has(#dark-mode:checked) header {
+    background-color: #1e293b;
+    color: #f1f5f9;
+}
+
+body:has(#dark-mode:checked) .event-card {
+    background-color: #273449;
+    color: #f1f5f9;
+}
+### dark mood as an option for the web ,, I faced alot of errors for this option but I fixed it and now it works fine
+
+body:has(#dark-mode:checked) h2,
+body:has(#dark-mode:checked) h3 {
+    color: #a8c7fa;
+}
+
+body:has(#dark-mode:checked) .agenda-table td {
+    background-color: #273449;
+    color: #f1f5f9;
+    border-color: #475569;
+}
+
+body:has(#dark-mode:checked) .site-footer {
+    background-color: #0b1220;
+} 
